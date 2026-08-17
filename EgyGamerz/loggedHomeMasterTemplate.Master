@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="loggedHomeMasterTemplate.Master.cs" Inherits="EgyGamerz.loginMasterTemplate" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style15 {
+            width: 100%;
+        }
+        
+        .auto-style5 {
+            width:1607px;
+            background-color:lightslategray;
+            height: 89px;
+        }
+        .auto-style10 {
+            width: 321px;
+            height: 89px;
+            text-align: center;
+        }
+        .auto-style13 {
+            width: 321px;
+            height: 89px;
+            text-align: center;
+            direction: ltr;
+        }
+        .auto-style19 {
+            font-size: medium;
+        }
+        .auto-style17 {
+            width: 321px;
+            height: 48px;
+            text-align: center;
+            direction: ltr;
+        }
+        .auto-style21 {
+            width: 321px;
+            text-align: center;
+        }
+        .auto-style22 {
+            width: 321px;
+            height: 48px;
+            text-align: center;
+        }
+        .button{
+	padding: 12px 24px;
+	background-color: white;
+	color: aliceblue;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	font-size: 18px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+        .auto-style23 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style15">
+                <tr>
+                    <td>
+            <table class="auto-style5">
+                <tr>
+                    <td class="auto-style10">
+                        <asp:Image ID="Image2" runat="server" Height="36px" ImageUrl="~/logo/EgyGamer_2__5_1__1_1.png" Width="188px" />
+                    </td>
+                    <td class="auto-style10">
+                        <asp:HyperLink ID="HyperLink6" runat="server">Video Games</asp:HyperLink>
+                    </td>
+                    <td class="auto-style10">
+                        <asp:HyperLink ID="HyperLink7" runat="server">Consoles</asp:HyperLink>
+                    </td>
+                    <td class="auto-style13">
+                        <asp:Button ID="homeBtn" runat="server" OnClick="homeBtn_Click" Text="Home" CssClass="auto-style23" ForeColor="Black" Height="30px" Width="105px" />
+                    </td>
+                    <td class="auto-style10">
+                        <asp:Button ID="logoutBtn" runat="server" OnClick="logoutBtn_Click" Text="Log Out" CssClass="auto-style23" ForeColor="Black" Height="30px" Width="105px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style21">
+                        <em>
+                        <asp:Label ID="lblMsg" runat="server" CssClass="auto-style19"></asp:Label>
+                        </em>
+                    </td>
+                    <td class="auto-style22">
+                    </td>
+                    <td class="auto-style22">
+                    </td>
+                    <td class="auto-style17">
+                    </td>
+                    <td class="auto-style22">
+                    </td>
+                </tr>
+                </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

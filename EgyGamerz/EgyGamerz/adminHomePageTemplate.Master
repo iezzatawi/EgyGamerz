@@ -1,0 +1,164 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminHomePageTemplate.master.cs" Inherits="EgyGamerz.adminHomePageTemplate" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1317px;
+        }
+        .auto-style2 {
+            width: 139%;
+        }
+
+        
+        .auto-style5 {
+            width:1606px;
+            background-color:lightslategray;
+            height: 108px;
+        }
+        .auto-style6 {
+            width: 1604px;
+        }
+        .auto-style7 {
+            width: 100%;
+        }
+        .auto-style13 {
+            width: 320px;
+            height: 85px;
+        }
+        .auto-style14 {
+            width: 321px;
+        }
+        .auto-style15 {
+            text-align: center;
+        }
+        .auto-style16 {
+            width: 320px;
+            height: 35px;
+        }
+        .auto-style18 {
+            width: 321px;
+            height: 85px;
+        }
+        .auto-style19 {
+            width: 321px;
+            height: 85px;
+            text-align: center;
+        }
+        .auto-style20 {
+            width: 321px;
+            height: 35px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form2" runat="server">
+            <table class="auto-style14">
+                <tr>
+                    <td class="auto-style28">
+        <div class="auto-style1">
+            <table class="auto-style2">
+                <tr>
+                    <td class="auto-style6">
+            <table class="auto-style5">
+                <tr>
+                    <td class="auto-style16">
+                        <asp:Image ID="Image3" runat="server" Height="36px" ImageUrl="~/logo/EgyGamer_2__5_1__1_1.png" Width="188px" />
+                    </td>
+                    <td class="auto-style20">
+                        <asp:HyperLink ID="HyperLink11" runat="server">Video Games</asp:HyperLink>
+                    </td>
+                    <td class="auto-style20">
+                        <asp:HyperLink ID="HyperLink12" runat="server">Consoles</asp:HyperLink>
+                    </td>
+                    <td class="auto-style20">
+                        <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/adminHomePage.aspx">Home</asp:HyperLink>
+                    </td>
+                    <td class="auto-style20">
+                        <asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/unloggedHomePage.aspx">Log Out</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style13">
+                        <em>
+                        <asp:Label ID="lblMsg" runat="server" CssClass="auto-style19"></asp:Label>
+                        </em>
+                    </td>
+                    <td class="auto-style18">
+                        &nbsp;</td>
+                    <td class="auto-style18">
+                        <table class="auto-style7">
+                            <tr>
+                                <td class="auto-style15">
+                        <asp:Button ID="addUserBtn" runat="server" Text="Add a User" OnClick="addUserBtn_Click" Width="122px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style15">
+                                    <asp:Button ID="Button1" runat="server" Text="Delete a User" Width="123px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style15">
+                                    <asp:Button ID="Button2" runat="server" Text="View Users" Width="123px" OnClick="Button2_Click" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="auto-style18">
+                        <table class="auto-style7">
+                            <tr>
+                                <td class="auto-style15">
+                        <asp:Button ID="addProductBtn" runat="server" Text="Add a Product" OnClick="Button1_Click" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style15">
+                                    <asp:Button ID="Button3" runat="server" Text="Delete Product" Width="124px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style15">
+                        <asp:Button ID="viewProductsBtn" runat="server" Text="View Products" OnClick="viewProductsBtn_Click" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="auto-style19">
+                        <table class="auto-style7">
+                            <tr>
+                                <td>
+                                    <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Delete Order" Width="108px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                        <asp:Button ID="viewOrdersBtn" runat="server" Text="View Orders" OnClick="viewOrdersBtn_Click" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        </div>
+                    </td>
+                </tr>
+            </table>
+    </form>
+</body>
+</html>

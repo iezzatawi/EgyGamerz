@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="unloggedHomePageTemplate.Master.cs" Inherits="EgyGamerz.homePageTemplate" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        
+        .auto-style5 {
+            width:1618px;
+            background-color:lightslategray;
+            height: 89px;
+        }
+        .auto-style7 {
+            width: 162px;
+            height: 89px;
+            text-align: center;
+        }
+        .auto-style10 {
+            width: 316px;
+            height: 89px;
+            text-align: center;
+        }
+        .auto-style12 {
+            width: 161px;
+            height: 89px;
+            text-align: center;
+        }
+        .auto-style13 {
+            width: 161px;
+            height: 89px;
+            text-align: center;
+            direction: ltr;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style5">
+                <tr>
+                    <td class="auto-style10">
+                        <asp:Image ID="Image2" runat="server" Height="36px" ImageUrl="~/logo/EgyGamer_2__5_1__1_1.png" Width="188px" />
+                    </td>
+                    <td class="auto-style12">
+                        <asp:HyperLink ID="HyperLink6" runat="server">Video Games</asp:HyperLink>
+                    </td>
+                    <td class="auto-style12">
+                        <asp:HyperLink ID="HyperLink7" runat="server">Consoles</asp:HyperLink>
+                    </td>
+                    <td class="auto-style13">
+                        <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/loginForm.aspx">Sign In</asp:HyperLink>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/signupForm.aspx">Sign Up</asp:HyperLink>
+                    </td>
+                </tr>
+                </table>
+        </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
